@@ -26,23 +26,23 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = "25467884"
+    API_HASH  = "05a687da36243593d4eb624f46375341"
+    BOT_TOKEN = "6120803941:AAE7M6UvfOqJ85Z6abD0AXu8TEuLuuhRLgM"
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = "Cluster0"     
+    DB_URL  = "mongodb+srv://itsh4x:59N3En5pMs1VBWag@cluster0.mpkvioo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = os.environ.get("LOG_CHANNEL", "")
+    START_PIC   = "https://graph.org/file/76ee90ae16375ad7e463e.jpg"
+    ADMIN       = "2139560486"
+    FORCE_SUB   = "-1001704871970"
+    LOG_CHANNEL = "-1002164876088"
 
     # wes response configuration     
-    WEBHOOK = bool(os.environ.get("WEBHOOK", "True"))
+    WEBHOOK = "False"
 
 
 
